@@ -6,12 +6,15 @@ body {
   height: 100%;
 }
 
-.container {
+.container  {
   width: 80%;
   margin: auto;
   overflow: hidden;
   padding-top: 15px;
+  text-align: center;
 }
+
+
 
 .button_1 {
   height: 38px;
@@ -95,13 +98,7 @@ header a:hover {
   background-position: center;
   font-size: 40px;
   color: #ffffff;
-  
 }
-
-
-
-
-
 
 /* Newsletter */
 
@@ -162,36 +159,25 @@ article#main-col {
 }
 
 .boxes .box img {
-  max-width: 100px;
+  max-width: 85px;
 }
 
 .box-usp {
   background-color: #36413d38;
   padding: 100px;
-  text-align: center;
+  text-align: inherit;
   font-size: 20px;
   list-style-position: inside;
   display: flex;
   background-position: center;
 }
 
-.box-usp {
-  font-size: 20px;
-  display: flex;
-  text-align: center;
-  padding: 80px;
-}
 
-.textarea{
+.textarea {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 40px;
   color: #e8491d;
-  
-  
-
-
-
 }
 
 * {
@@ -204,15 +190,20 @@ article#main-col {
   background: url("https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
     no-repeat center;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 10px;
+  
+  border-bottom: #e8491d 5px solid;
+  border-top: #34495e 5px solid;
 }
 
 .contact-section h1 {
   text-align: center;
-  color: #ddd;
   font-size: 37px;
-  padding-top: 30px;
+  padding-top: 10px;
+  color: #34495e;
 }
+
+
 
 .border {
   width: 100px;
@@ -227,6 +218,7 @@ article#main-col {
   padding: 0 10px;
   overflow: hidden;
   margin: 0 0 0 900px;
+  padding-bottom: 20px;
 }
 
 .contact-form-text {
@@ -263,20 +255,28 @@ textarea.contact-form-text {
   cursor: pointer;
   transition: 0.5s;
   margin-right: 180px;
+  
 }
 
 .contact-form-btn:hover {
   background: #2980b9;
 }
 
-.box-usp-1 {
-  margin-bottom: 30px;
-  padding-top: 22px;
-  padding-right: 50px;
-  padding-bottom: 27px;
-  padding-left: 50px;
-  font-size: 20px;
+
+
+#contacttext p{
+text-align: left;
+font-size: 20px;
+box-sizing: border-box;
+  
+
+
+
+
 }
+
+
+
 
 footer {
   padding-top: 10px;
@@ -285,4 +285,7 @@ footer {
   text-align: center;
   font-size: 20px;
   background: linear-gradient(rgba(0, 0, 150, 0.5), rgba());
+  padding-bottom: 20px;
+  border-bottom: #e8491d 7px solid;
+  border-top: #e8491d 7px solid;
 }
