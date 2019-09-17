@@ -6,15 +6,13 @@ body {
   height: 100%;
 }
 
-.container  {
+.container {
   width: 80%;
   margin: auto;
   overflow: hidden;
   padding-top: 15px;
   text-align: center;
 }
-
-
 
 .button_1 {
   height: 38px;
@@ -40,11 +38,14 @@ header form {
 }
 
 header {
+  position: fixed;
   background-color: #35424a;
   color: #ffffff;
   padding-top: 20px;
   min-height: 20px;
+  width: 100%;
   border-bottom: #e8491d 5px solid;
+  transition: transform 0.5s;
 }
 
 header a {
@@ -86,6 +87,14 @@ header .current a {
 header a:hover {
   color: #cccccc;
   font-weight: bold;
+}
+
+header.header-is-hidden {
+  transform: translateY(-100%);
+}
+
+.outer {
+  padding-top: 102px;
 }
 
 #showcase {
@@ -146,9 +155,9 @@ article#main-col {
 
 .boxes .box {
   display: inline-block;
-  text-align: center;
-  width: 20%;
-  line-height: 1.3em;
+  text-align: left;
+  width: 22%;
+  line-height: 1.4em;
   font-style: "Roboto", Helvetica, Arial, Lucida, sans-serif;
   font-size: 15px;
   margin-bottom: 45px;
@@ -172,7 +181,6 @@ article#main-col {
   background-position: center;
 }
 
-
 .textarea {
   text-align: center;
   font-size: 30px;
@@ -191,7 +199,7 @@ article#main-col {
     no-repeat center;
   background-size: cover;
   padding-top: 10px;
-  
+
   border-bottom: #e8491d 5px solid;
   border-top: #34495e 5px solid;
 }
@@ -203,22 +211,11 @@ article#main-col {
   color: #34495e;
 }
 
-
-
 .border {
   width: 100px;
   height: 10px;
   background: #39495e;
   margin: 40px auto;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
-  margin: 0 0 0 900px;
-  padding-bottom: 20px;
 }
 
 .contact-form-text {
@@ -255,28 +252,30 @@ textarea.contact-form-text {
   cursor: pointer;
   transition: 0.5s;
   margin-right: 180px;
-  
 }
 
 .contact-form-btn:hover {
   background: #2980b9;
 }
 
-
-
-#contacttext p{
-text-align: left;
-font-size: 20px;
-box-sizing: border-box;
-  
-
-
-
-
+#contacttext .container {
+  text-align: left;
 }
 
+#contacttext p {
+  font-size: 20px;
+  box-sizing: border-box;
+}
 
-
+#text {
+  display: inline-block;
+  width: 48%;
+}
+#form {
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 20px;
+}
 
 footer {
   padding-top: 10px;
