@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   padding-top: 15px;
   text-align: center;
+  
 }
 
 .button_1 {
@@ -168,7 +169,7 @@ article#main-col {
 }
 
 .boxes .box img {
-  max-width: 85px;
+  max-width: 70px;
 }
 
 .box-usp {
@@ -185,7 +186,7 @@ article#main-col {
   text-align: center;
   font-size: 30px;
   padding-top: 40px;
-  color: #e8491d;
+  color: #35424a;
 }
 
 * {
@@ -224,12 +225,13 @@ article#main-col {
   box-sizing: border-box;
   margin: 16px 0;
   border: 0;
-  background: #111;
+  background: #cccccc;
   padding: 20px 20px;
   outline: none;
-  color: #ddd;
+  color: black;
   transition: 0.5s;
   border-radius: 8px;
+  margin-left: 400px;
 }
 
 .contact-form-text:focus {
@@ -267,6 +269,12 @@ textarea.contact-form-text {
   box-sizing: border-box;
 }
 
+.imgwp{
+
+color:black;
+
+}
+
 #text {
   display: inline-block;
   width: 48%;
@@ -285,6 +293,6 @@ footer {
   font-size: 20px;
   background: linear-gradient(rgba(0, 0, 150, 0.5), rgba());
   padding-bottom: 20px;
-  border-bottom: #e8491d 7px solid;
-  border-top: #e8491d 7px solid;
+  border-bottom: #e8491d 2px solid;
+  border-top: #e8491d 2px solid;
 }
