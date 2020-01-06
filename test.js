@@ -10,3 +10,10 @@ document.addEventListener(
   },
   { capture: false, passive: true }
 );
+
+$('.menu-toggle').click(function(){
+
+  $('.site-nav').toggleClass('site-nav--open');
+  $(this).toggleClass('open');
+
+})
