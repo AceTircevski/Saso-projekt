@@ -8,7 +8,7 @@ body {
 
 header {
   position: fixed;
-  background-color: #35424a;
+  background-color: #35424a7a;
   color: #ffffff;
   padding-top: 20px;
   min-height: 50px;
@@ -123,7 +123,7 @@ header ::after {
 }
 
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   right: 0.5em;
   top: 2.4em;
   cursor: pointer;
@@ -190,12 +190,21 @@ header ::after {
   opacity: 0.8;
 }
 
+h1.page-title {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 .dark {
   padding: 15px;
   background: #35424a;
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.dark h3 {
+  text-align: center;
 }
 
 .outer {
@@ -278,19 +287,31 @@ article#main-col {
 
 /*boxes*/
 img {
-  width: 70px;
+  width: 50px;
   height: auto;
   display: block;
+  margin: 20px;
 }
 
-.box-usp {
+.container-info {
   background-color: #36413d38;
-  padding: 100px;
+  padding: 25px;
   text-align: inherit;
   font-size: 1.4em;
   list-style-position: inside;
   display: flex;
   background-position: center;
+}
+
+.container-5 {
+  display: block;
+  line-height: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textarea {
@@ -300,14 +321,73 @@ img {
   color: #35424a;
 }
 
-.contact-section {
-  background: url("https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
-    no-repeat center;
+#contact-section {
+  background: url("business.jpg") no-repeat center;
   background-size: cover;
   padding-top: 10px;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  justify-content: flex-end;
+}
 
-  border-bottom: #e8491d 5px solid;
-  border-top: #34495e 5px solid;
+.container-3 h1 {
+  font-size: 3em;
+  color: #ffffff;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  background: black;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 2px solid #c01010; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container-contact {
+  border-radius: 5px;
+  background-color: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+}
+
+form h1 {
+  text-align: left;
+  color: #fee1e1;
+  font-size: 2.5em;
+}
+
+label {
+  font-size: 1.4em;
+  color: #e8e6e6;
 }
 
 .contact-section h1 {
@@ -322,6 +402,29 @@ img {
   height: 10px;
   background: #39495e;
   margin: 40px auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: brown;
+}
+
+.circles-red {
+  display: flex;
+  margin: 20px;
+}
+
+#contact-text {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+footer p,
+h5 {
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -346,7 +449,7 @@ img {
   .boxes {
     flex: 0 100%;
     padding: 0;
-    margin: 15px;
+    margin: 3px;
     text-align: center;
     background: cadetblue;
   }
@@ -377,6 +480,13 @@ img {
     padding: 0;
     margin: 2em;
   }
+  form {
+    width: 100%;
+    margin: 20px;
+  }
+  form h1 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -402,10 +512,12 @@ img {
     background: none;
   }
 
+  .boxes {
+    padding: 51px;
+  }
   .site-nav li {
     margin: 10px;
   }
-
   header h1 {
     display: none;
   }
