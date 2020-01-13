@@ -50,22 +50,6 @@ header.header-is-hidden {
   transform: translateY(-100%);
 }
 
-/* header {
-  background: #1D1B1B;
-  color: whitesmoke;
-  padding: 1em 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-
-header h1{
- display: block;
- font-size: 1em;
- margin-right: auto;
- white-space: nowrap;
-} */
 
 header ::after {
   content: "";
@@ -225,13 +209,13 @@ h1.page-title {
 
 /* Newsletter */
 
-#newsletter {
+/* #newsletter {
   padding: 15px;
   color: #ffffff;
   background: #35424a;
   border-top: #e8491d 5px solid;
-}
-
+} */
+/* 
 #newsletter h1 {
   float: left;
   margin-top: 10px;
@@ -240,14 +224,16 @@ h1.page-title {
 #newsletter form {
   float: right;
   margin-top: 15px;
-}
+} */
 
-#newsletter input[type="email"] {
+/* #newsletter input[type="email"] {
   padding: 4px;
   height: 25px;
   width: 250px;
   margin: 0 0 15px;
-}
+} */
+
+
 
 /* sidebar*/
 aside#sidebar {
@@ -304,8 +290,9 @@ img {
 }
 
 .container-5 {
-  display: block;
   line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -318,7 +305,7 @@ img {
   text-align: center;
   font-size: 30px;
   padding-top: 40px;
-  color: #35424a;
+  color: #f01010;
 }
 
 #contact-section {
@@ -341,17 +328,18 @@ input[type="text"],
 select,
 textarea {
   background: black;
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 2px solid #c01010; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical; 
+  color: white;
 }
 
-/* Style the submit button with a specific background color etc */
+
+
+
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
@@ -361,12 +349,12 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+
 .container-contact {
   border-radius: 5px;
   background-color: none;
