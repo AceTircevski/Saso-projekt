@@ -187,7 +187,7 @@ h1.page-title {
   margin-bottom: 10px;
 }
 
-.dark h3 {
+.dark.h3 {
   text-align: center;
 }
 
@@ -206,33 +206,6 @@ h1.page-title {
   font-size: 40px;
   color: #ffffff;
 }
-
-/* Newsletter */
-
-/* #newsletter {
-  padding: 15px;
-  color: #ffffff;
-  background: #35424a;
-  border-top: #e8491d 5px solid;
-} */
-/* 
-#newsletter h1 {
-  float: left;
-  margin-top: 10px;
-}
-
-#newsletter form {
-  float: right;
-  margin-top: 15px;
-} */
-
-/* #newsletter input[type="email"] {
-  padding: 4px;
-  height: 25px;
-  width: 250px;
-  margin: 0 0 15px;
-} */
-
 
 
 /* sidebar*/
@@ -257,6 +230,7 @@ article#main-col {
   flex-wrap: wrap;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  justify-content: center;
 }
 
 .boxes {
@@ -293,6 +267,7 @@ img {
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container {
